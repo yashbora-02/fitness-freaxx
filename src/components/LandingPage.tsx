@@ -16,6 +16,22 @@ import {
   Youtube
 } from 'lucide-react';
 import unleashImage from '../assets/unleash.jpg';
+import mImage from '../assets/mukul.jpg';
+import aImage from '../assets/amita.jpg';
+import p1 from '../assets/p1.webp';
+import p2 from '../assets/p2.webp';
+import p3 from '../assets/p3.webp';
+import p4 from '../assets/p4.webp';
+import p5 from '../assets/p5.webp';
+import c1 from '../assets/c1.jpeg';
+import imageThumb from '../assets/t1.png';
+import imageThumb2 from '../assets/t2.png';
+import imageThumb3 from '../assets/t3.png';
+import imageThumb4 from '../assets/t4.png';
+import imageThumb5 from '../assets/t5.png';
+import imageThumb6 from '../assets/t6.png';
+import imageThumb7 from '../assets/t7.png';
+import imageThumb8 from '../assets/t8.png'; 
 
 const LandingPage = () => {
   return (
@@ -99,6 +115,50 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Trainers Section */}
+      <section className="py-20 bg-black relative">
+        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')] bg-cover bg-center opacity-20"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl md:text-5xl font-black uppercase text-center mb-12 tracking-tight text-white">
+            <span className="text-red-600">Meet</span> Our Trainers
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Trainer 1 */}
+            <div className="bg-gray-900 rounded-2xl shadow-2xl flex flex-col items-center p-8 border-l-8 border-red-600 hover:scale-105 transition-transform duration-300">
+              <img
+                src={mImage}
+                alt="Mukul Chavariya"
+                className="w-40 h-40 object-cover rounded-full border-4 border-red-600 mb-6 shadow-lg"
+              />
+              <h3 className="text-2xl font-bold text-white mb-2">Mukul Chavariya</h3>
+              <p className="text-red-400 font-semibold mb-4">Head Trainer & Nutritionist</p>
+              <ul className="text-gray-300 text-base space-y-1 text-center">
+                <li>10 years of experience in training and transforming lives</li>
+                <li>Certified Fitness professional from K11 fitness of science</li>
+                <li>Certified from Gold's Gym as personal trainer</li>
+                <li>Certified Cult Fit personal trainer</li>
+                <li>Certified diploma in nutrition</li>
+              </ul>
+            </div>
+            {/* Trainer 2 */}
+            <div className="bg-gray-900 rounded-2xl shadow-2xl flex flex-col items-center p-8 border-l-8 border-red-600 hover:scale-105 transition-transform duration-300">
+              <img
+                src={aImage}
+                alt="Amita Godiyaal"
+                className="w-40 h-40 object-cover rounded-full border-4 border-red-600 mb-6 shadow-lg"
+              />
+              <h3 className="text-2xl font-bold text-white mb-2">Amita Godiyaal</h3>
+              <p className="text-red-400 font-semibold mb-4">Yoga Expert</p>
+              <ul className="text-gray-300 text-base space-y-1 text-center">
+                <li>4 years of experience in training and transforming lives</li>
+                <li>Certified yoga teacher from Rishikesh Yogshala</li>
+                <li>K11 certified yoga teacher</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 1-ON-1 PERSONAL TRAINING Section */}
       <section className="py-10 bg-black text-center">
         <h2 className="text-3xl md:text-5xl font-black uppercase mb-6 tracking-tight">
@@ -171,7 +231,7 @@ const LandingPage = () => {
             </div>
             {/* Right: Image, Service Title, Description */}
             <div>
-              <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&w=800" alt="Personal Training" className="rounded-lg shadow-xl w-40 h-32 md:w-full md:h-auto object-cover max-h-32 md:max-h-80 mb-4 md:mb-6 mx-auto" />
+              <img src={p1} alt="Personal Training" className="rounded-lg shadow-xl w-40 h-32 md:w-full md:h-auto object-cover max-h-32 md:max-h-80 mb-4 md:mb-6 mx-auto" />
               <h3 className="font-bold italic text-xl md:text-2xl mb-2 md:mb-3 text-black dark:text-white">Offline Personalized Training Routines</h3>
               <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 mb-6 md:mb-10">Prefer in-person sessions? Our certified trainers are available for one-on-one coaching at our partner gyms or your preferred location. Each session is tailored to your fitness level and goals.</p>
             </div>
@@ -180,7 +240,7 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {/* Block 1: Nutrition */}
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-              <img src="https://images.pexels.com/photos/4198023/pexels-photo-4198023.jpeg?auto=compress&w=800" alt="Nutrition Coaching" className="rounded-lg w-40 h-32 md:w-64 md:h-64 object-cover mb-4 md:mb-0 mx-auto md:mx-0" />
+              <img src={p2} alt="Nutrition Coaching" className="rounded-lg w-40 h-32 md:w-64 md:h-64 object-cover mb-4 md:mb-0 mx-auto md:mx-0" />
               <div className="text-center md:text-left">
                 <h4 className="font-bold italic text-xl md:text-2xl mb-2 md:mb-4 text-black dark:text-white">Expert Nutritional Coaching</h4>
                 <p className="text-base md:text-lg text-gray-700 dark:text-gray-200">Fitness is 70% nutrition and 30% workout. Our certified nutritionists create meal plans tailored to your body type, preferences, and goals.</p>
@@ -188,7 +248,7 @@ const LandingPage = () => {
             </div>
             {/* Block 2: Home Training */}
             <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-              <img src="https://images.pexels.com/photos/1552103/pexels-photo-1552103.jpeg?auto=compress&w=800" alt="Home Training" className="rounded-lg w-40 h-32 md:w-64 md:h-64 object-cover mb-4 md:mb-0 mx-auto md:mx-0" />
+              <img src={p3} alt="Home Training" className="rounded-lg w-40 h-32 md:w-64 md:h-64 object-cover mb-4 md:mb-0 mx-auto md:mx-0" />
               <div className="text-center md:text-left">
                 <h4 className="font-bold italic text-xl md:text-2xl mb-2 md:mb-4 text-black dark:text-white">Home Training</h4>
                 <p className="text-base md:text-lg text-gray-700 dark:text-gray-200">No gym? No problem! Our home training plans use minimal equipment and are tailored to your schedule. We bring fitness to your living room literally.</p>
@@ -207,7 +267,7 @@ const LandingPage = () => {
             {/* Card 1 */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl flex flex-col items-center p-4 md:p-10 min-h-[200px] md:min-h-[400px]">
               <div className="bg-red-600 p-2 md:p-3 rounded-lg mb-4 md:mb-6">
-                <img src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&w=400" alt="Yoga" className="w-24 h-24 md:w-40 md:h-40 object-cover rounded-xl" />
+                <img src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&w=400" alt="Yoga" className="w-32 h-32 md:w-56 md:h-56 object-cover rounded-xl" />
               </div>
               <h3 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-black dark:text-white">YOGA</h3>
               <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 text-center">Balance your body, mind, and spirit with our professionally led yoga sessions. Ideal for stress relief, flexibility, and overall well-being.</p>
@@ -215,7 +275,7 @@ const LandingPage = () => {
             {/* Card 2 */}
             <div className="bg-black rounded-2xl shadow-2xl flex flex-col items-center p-4 md:p-10 min-h-[200px] md:min-h-[400px] border-4 border-red-600">
               <div className="bg-red-600 p-2 md:p-3 rounded-lg mb-4 md:mb-6">
-                <img src="https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&w=400" alt="Online Personal Training" className="w-24 h-24 md:w-40 md:h-40 object-cover rounded-xl" />
+                <img src={p4} alt="Online Personal Training" className="w-32 h-32 md:w-56 md:h-56 object-cover rounded-xl" />
               </div>
               <h3 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-red-600">ONLINE PERSONAL TRAINING</h3>
               <p className="text-base md:text-lg text-gray-200 text-center">No matter where you are, you can train with our expert coaches through video calls and mobile-based fitness plans. Enjoy flexibility and accountability with fully customized workouts designed for your goals.</p>
@@ -223,7 +283,7 @@ const LandingPage = () => {
             {/* Card 3 */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl flex flex-col items-center p-4 md:p-10 min-h-[200px] md:min-h-[400px]">
               <div className="bg-red-600 p-2 md:p-3 rounded-lg mb-4 md:mb-6">
-                <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&w=400" alt="Weight Loss" className="w-24 h-24 md:w-40 md:h-40 object-cover rounded-xl" />
+                <img src={p5} alt="Weight Loss" className="w-32 h-32 md:w-56 md:h-56 object-cover rounded-xl" />
               </div>
               <h3 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-black dark:text-white">WEIGHT LOSS PROGRAMS</h3>
               <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 text-center">Struggling with weight loss? Our comprehensive programs combine diet, exercise, and lifestyle changes to help you burn fat and build lasting habits. No gimmicks, just real, sustainable results.</p>
@@ -236,21 +296,11 @@ const LandingPage = () => {
       <section className="py-20 bg-black dark:bg-black mb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-6xl font-black text-center mb-12 text-white tracking-tight">CLIENT TRANSFORMATIONS</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10">
+          <div className="flex justify-center">
             {/* Transformation 1 */}
-            <div className="bg-gray-900 rounded-2xl shadow-xl flex flex-col items-center p-3 md:p-6">
-              <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&w=500" alt="Client Transformation 1" className="w-full h-32 md:h-72 object-cover rounded-xl mb-2 md:mb-4" />
-              <p className="text-sm md:text-lg text-gray-200 text-center italic">"Lost 20kg and gained confidence! The trainers at FitnessFreaxx changed my life."</p>
-            </div>
-            {/* Transformation 2 */}
-            <div className="bg-gray-900 rounded-2xl shadow-xl flex flex-col items-center p-3 md:p-6">
-              <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&w=500" alt="Client Transformation 2" className="w-full h-32 md:h-72 object-cover rounded-xl mb-2 md:mb-4" />
-              <p className="text-sm md:text-lg text-gray-200 text-center italic">"From zero to marathon runner! The personalized plans really work."</p>
-            </div>
-            {/* Transformation 3 */}
-            <div className="bg-gray-900 rounded-2xl shadow-xl flex flex-col items-center p-3 md:p-6">
-              <img src="https://images.pexels.com/photos/2261482/pexels-photo-2261482.jpeg?auto=compress&w=500" alt="Client Transformation 3" className="w-full h-32 md:h-72 object-cover rounded-xl mb-2 md:mb-4" />
-              <p className="text-sm md:text-lg text-gray-200 text-center italic">"I never thought I could feel this strong and healthy. Thank you, FitnessFreaxx!"</p>
+            <div className="bg-gray-900 rounded-2xl shadow-xl flex flex-col items-center p-3 md:p-4">
+              <img src={c1} alt="Client Transformation 1" className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-xl mb-2 md:mb-4" />
+              <p className="text-xs md:text-base text-gray-200 text-center italic">"Lost weight and gained confidence! The trainers at FitnessFreaxx changed my life."</p>
             </div>
           </div>
         </div>
@@ -311,7 +361,7 @@ const LandingPage = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              'https://images.pexels.com/photos/1552103/pexels-photo-1552103.jpeg?auto=compress&cs=tinysrgb&w=400',
+              'https://www.instagram.com/p/DEg-RRWpInR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
               'https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=400',
               'https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&w=400',
               'https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -320,17 +370,37 @@ const LandingPage = () => {
               'https://images.pexels.com/photos/1431283/pexels-photo-1431283.jpeg?auto=compress&cs=tinysrgb&w=400',
               'https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg?auto=compress&cs=tinysrgb&w=400'
             ].map((src, index) => (
-              <div key={index} className="relative group overflow-hidden rounded-lg aspect-square">
-                <img 
-                  src={src}
-                  alt={`Fitness Freaxx Gallery ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/20 transition-colors duration-300"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Instagram className="h-8 w-8 text-white" />
+              index === 0 ? (
+                <a
+                  key={index}
+                  href="https://www.instagram.com/p/DEg-RRWpInR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative group overflow-hidden rounded-lg aspect-square block"
+                >
+                  <img 
+                    src={imageThumb}
+                    alt={`Fitness Freaxx Gallery ${index + 1}`}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/20 transition-colors duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Instagram className="h-8 w-8 text-white" />
+                  </div>
+                </a>
+              ) : (
+                <div key={index} className="relative group overflow-hidden rounded-lg aspect-square">
+                  <img 
+                    src={src}
+                    alt={`Fitness Freaxx Gallery ${index + 1}`}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/20 transition-colors duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Instagram className="h-8 w-8 text-white" />
+                  </div>
                 </div>
-              </div>
+              )
             ))}
           </div>
         </div>
