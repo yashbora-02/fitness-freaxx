@@ -24,14 +24,15 @@ import p3 from '../assets/p3.webp';
 import p4 from '../assets/p4.webp';
 import p5 from '../assets/p5.webp';
 import c1 from '../assets/c1.jpeg';
-import imageThumb from '../assets/t1.png';
-import imageThumb2 from '../assets/t2.png';
-import imageThumb3 from '../assets/t3.png';
-import imageThumb4 from '../assets/t4.png';
-import imageThumb5 from '../assets/t5.png';
-import imageThumb6 from '../assets/t6.png';
-import imageThumb7 from '../assets/t7.png';
-import imageThumb8 from '../assets/t8.png'; 
+import imageThumb1 from '../assets/t1.png';
+import imageThumb2 from '../assets/t2.jpg';
+import imageThumb3 from '../assets/t3.jpg';
+import imageThumb4 from '../assets/t4.jpg';
+import imageThumb5 from '../assets/t5.jpg';
+import imageThumb6 from '../assets/t6.jpg';
+import imageThumb7 from '../assets/t7.jpg';
+import imageThumb8 from '../assets/t8.jpg';
+ 
 
 const LandingPage = () => {
   return (
@@ -350,61 +351,48 @@ const LandingPage = () => {
       </section>
 
       {/* Instagram Gallery Section */}
-      <section id="gallery" className="py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black uppercase mb-4 tracking-tight">
-              <span className="text-red-600">FREAXX</span> IN ACTION
-            </h2>
-            <p className="text-xl text-gray-300">See our community crushing their goals</p>
+<section id="gallery" className="py-20 bg-black">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-5xl font-black uppercase mb-4 tracking-tight">
+        <span className="text-red-600">FREAXX</span> IN ACTION
+      </h2>
+      <p className="text-xl text-gray-300">See our community crushing their goals</p>
+    </div>
+
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {[
+        { link: 'https://www.instagram.com/p/DEg-RRWpInR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', thumb: imageThumb1 },
+        { link: 'https://www.instagram.com/reel/CjzRY5_pYQJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', thumb: imageThumb2 },
+        { link: 'https://www.instagram.com/reel/C3ZcfZzt_e2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', thumb: imageThumb3 },
+        { link: 'https://www.instagram.com/reel/C295LSBpaiF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', thumb: imageThumb4 },
+        { link: 'https://www.instagram.com/reel/Cx2Gn9YpVGV/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', thumb: imageThumb5 },
+        { link: 'https://www.instagram.com/p/Cs-l4ZTSwb2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', thumb: imageThumb6 },
+        { link: 'https://www.instagram.com/reel/CwWk1L9J-2h/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', thumb: imageThumb7 },
+        { link: 'https://www.instagram.com/p/CvwTugjp97W/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==', thumb: imageThumb8 },
+      ].map(({ link, thumb }, index) => (
+        <a
+          key={index}
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative group overflow-hidden rounded-lg aspect-square block"
+        >
+          <img 
+            src={thumb}
+            alt={`Fitness Freaxx Gallery ${index + 1}`}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/20 transition-colors duration-300"></div>
+          <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <Instagram className="h-8 w-8 text-white" />
           </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[
-              'https://www.instagram.com/p/DEg-RRWpInR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-              'https://images.pexels.com/photos/1431282/pexels-photo-1431282.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/2247179/pexels-photo-2247179.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/1431283/pexels-photo-1431283.jpeg?auto=compress&cs=tinysrgb&w=400',
-              'https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg?auto=compress&cs=tinysrgb&w=400'
-            ].map((src, index) => (
-              index === 0 ? (
-                <a
-                  key={index}
-                  href="https://www.instagram.com/p/DEg-RRWpInR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative group overflow-hidden rounded-lg aspect-square block"
-                >
-                  <img 
-                    src={imageThumb}
-                    alt={`Fitness Freaxx Gallery ${index + 1}`}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/20 transition-colors duration-300"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Instagram className="h-8 w-8 text-white" />
-                  </div>
-                </a>
-              ) : (
-                <div key={index} className="relative group overflow-hidden rounded-lg aspect-square">
-                  <img 
-                    src={src}
-                    alt={`Fitness Freaxx Gallery ${index + 1}`}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/20 transition-colors duration-300"></div>
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Instagram className="h-8 w-8 text-white" />
-                  </div>
-                </div>
-              )
-            ))}
-          </div>
-        </div>
-      </section>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* YouTube Shorts Section */}
       <section className="py-20 bg-black">
@@ -523,11 +511,11 @@ const LandingPage = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-red-600" />
-                  <span className="text-gray-300">(555) 123-FREAXX</span>
+                  <span className="text-gray-300"> +91 7830356468</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-red-600" />
-                  <span className="text-gray-300">info@fitnessfreaxx.com</span>
+                  <span className="text-gray-300">Mukulchavariya.14@gmail.com</span>
                 </div>
               </div>
             </div>

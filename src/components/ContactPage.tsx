@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Dumbbell, Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { ArrowLeft, Dumbbell, Phone, Mail, MapPin, Send } from 'lucide-react';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -94,7 +94,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Phone</h3>
-                    <p className="text-gray-300">(555) 123-FREAXX</p>
+                    <p className="text-gray-300">+91 7830356468</p>
                   </div>
                 </div>
                 
@@ -104,22 +104,9 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">Email</h3>
-                    <p className="text-gray-300">info@fitnessfreaxx.com</p>
+                    <p className="text-gray-300">Mukulchavariya.14@gmail.com</p>
                   </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="bg-red-600 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Hours</h3>
-                    <div className="text-gray-300 space-y-1">
-                      <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
-                      <p>Weekend: 6:00 AM - 10:00 PM</p>
-                      <p className="text-red-600 font-medium">24/7 Access for Members</p>
-                    </div>
-                  </div>
+              
                 </div>
               </div>
 
@@ -221,7 +208,7 @@ const ContactPage = () => {
                   className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg font-bold transition-colors inline-flex items-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
-                  <span>(555) 123-FREAXX</span>
+                  <span>+91 7830356468</span>
                 </a>
               </div>
             </div>
