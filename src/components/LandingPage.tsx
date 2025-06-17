@@ -218,6 +218,42 @@ const LandingPage = () => {
         </div>
       </section>
 
+      
+
+      {/* POPULAR FITNESS PROGRAMS Section */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl md:text-6xl font-black text-center mb-10 text-black dark:text-white">POPULAR FITNESS PROGRAMS</h2>
+          <p className="text-center text-base md:text-lg text-gray-700 dark:text-gray-200 mb-8 md:mb-14 max-w-2xl mx-auto">Our carefully curated fitness programs have been developed to ensure that every client can find a path that works best for them</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
+            {/* Card 1 */}
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl flex flex-col items-center p-4 md:p-10 min-h-[200px] md:min-h-[400px]">
+              <div className="bg-red-600 p-2 md:p-3 rounded-lg mb-4 md:mb-6">
+                <img src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&w=400" alt="Yoga" className="w-32 h-32 md:w-56 md:h-56 object-cover rounded-xl" />
+              </div>
+              <h3 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-black dark:text-white">YOGA</h3>
+              <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 text-center">Balance your body, mind, and spirit with our professionally led yoga sessions. Ideal for stress relief, flexibility, and overall well-being.</p>
+            </div>
+            {/* Card 2 */}
+            <div className="bg-black rounded-2xl shadow-2xl flex flex-col items-center p-4 md:p-10 min-h-[200px] md:min-h-[400px] border-4 border-red-600">
+              <div className="bg-red-600 p-2 md:p-3 rounded-lg mb-4 md:mb-6">
+                <img src={p4} alt="Online Personal Training" className="w-32 h-32 md:w-56 md:h-56 object-cover rounded-xl" />
+              </div>
+              <h3 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-red-600">ONLINE PERSONAL TRAINING</h3>
+              <p className="text-base md:text-lg text-gray-200 text-center">No matter where you are, you can train with our expert coaches through video calls and mobile-based fitness plans. Enjoy flexibility and accountability with fully customized workouts designed for your goals.</p>
+            </div>
+            {/* Card 3 */}
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl flex flex-col items-center p-4 md:p-10 min-h-[200px] md:min-h-[400px]">
+              <div className="bg-red-600 p-2 md:p-3 rounded-lg mb-4 md:mb-6">
+                <img src={p5} alt="Weight Loss" className="w-32 h-32 md:w-56 md:h-56 object-cover rounded-xl" />
+              </div>
+              <h3 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-black dark:text-white">WEIGHT LOSS PROGRAMS</h3>
+              <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 text-center">Struggling with weight loss? Our comprehensive programs combine diet, exercise, and lifestyle changes to help you burn fat and build lasting habits. No gimmicks, just real, sustainable results.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WHAT YOU GET WITH FitnessFreaxx Section (screenshot style) */}
       <section className="py-10 md:py-20 bg-gray-50 dark:bg-black">
         <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 space-y-12 md:space-y-20">
@@ -254,40 +290,6 @@ const LandingPage = () => {
                 <h4 className="font-bold italic text-xl md:text-2xl mb-2 md:mb-4 text-black dark:text-white">Home Training</h4>
                 <p className="text-base md:text-lg text-gray-700 dark:text-gray-200">No gym? No problem! Our home training plans use minimal equipment and are tailored to your schedule. We bring fitness to your living room literally.</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* POPULAR FITNESS PROGRAMS Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl md:text-6xl font-black text-center mb-10 text-black dark:text-white">POPULAR FITNESS PROGRAMS</h2>
-          <p className="text-center text-base md:text-lg text-gray-700 dark:text-gray-200 mb-8 md:mb-14 max-w-2xl mx-auto">Our carefully curated fitness programs have been developed to ensure that every client can find a path that works best for them</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12">
-            {/* Card 1 */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl flex flex-col items-center p-4 md:p-10 min-h-[200px] md:min-h-[400px]">
-              <div className="bg-red-600 p-2 md:p-3 rounded-lg mb-4 md:mb-6">
-                <img src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&w=400" alt="Yoga" className="w-32 h-32 md:w-56 md:h-56 object-cover rounded-xl" />
-              </div>
-              <h3 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-black dark:text-white">YOGA</h3>
-              <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 text-center">Balance your body, mind, and spirit with our professionally led yoga sessions. Ideal for stress relief, flexibility, and overall well-being.</p>
-            </div>
-            {/* Card 2 */}
-            <div className="bg-black rounded-2xl shadow-2xl flex flex-col items-center p-4 md:p-10 min-h-[200px] md:min-h-[400px] border-4 border-red-600">
-              <div className="bg-red-600 p-2 md:p-3 rounded-lg mb-4 md:mb-6">
-                <img src={p4} alt="Online Personal Training" className="w-32 h-32 md:w-56 md:h-56 object-cover rounded-xl" />
-              </div>
-              <h3 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-red-600">ONLINE PERSONAL TRAINING</h3>
-              <p className="text-base md:text-lg text-gray-200 text-center">No matter where you are, you can train with our expert coaches through video calls and mobile-based fitness plans. Enjoy flexibility and accountability with fully customized workouts designed for your goals.</p>
-            </div>
-            {/* Card 3 */}
-            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl flex flex-col items-center p-4 md:p-10 min-h-[200px] md:min-h-[400px]">
-              <div className="bg-red-600 p-2 md:p-3 rounded-lg mb-4 md:mb-6">
-                <img src={p5} alt="Weight Loss" className="w-32 h-32 md:w-56 md:h-56 object-cover rounded-xl" />
-              </div>
-              <h3 className="text-xl md:text-3xl font-black mb-2 md:mb-4 text-black dark:text-white">WEIGHT LOSS PROGRAMS</h3>
-              <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 text-center">Struggling with weight loss? Our comprehensive programs combine diet, exercise, and lifestyle changes to help you burn fat and build lasting habits. No gimmicks, just real, sustainable results.</p>
             </div>
           </div>
         </div>
