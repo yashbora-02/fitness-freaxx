@@ -163,7 +163,7 @@ const LandingPage = () => {
       {/* 1-ON-1 PERSONAL TRAINING Section */}
       <section className="py-10 bg-black text-center">
         <h2 className="text-3xl md:text-5xl font-black uppercase mb-6 tracking-tight">
-          1-ON-1 PERSONAL<br />TRAINING
+          1-ON-1 PERSONAL<br />ONLINETRAINING
         </h2>
         <div className="flex justify-center mb-6">
           <div className="bg-red-600 w-full max-w-xl py-2 px-4 flex items-center justify-center shadow-lg">
@@ -176,47 +176,7 @@ const LandingPage = () => {
         <div className="mt-4 border-b-4 border-red-600 w-1/4 mx-auto"></div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black uppercase mb-4 tracking-tight">
-              OUR <span className="text-red-600">SERVICES</span>
-            </h2>
-            <p className="text-xl text-gray-300">Comprehensive fitness solutions tailored to your goals</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            <div className="bg-gray-900 p-6 md:p-8 rounded-lg hover:bg-gray-800 transition-colors duration-300 group flex flex-col items-center text-center">
-              <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Target className="h-12 w-12" />
-              </div>
-              <h3 className="text-2xl font-bold mb-2 md:mb-4">Personal Training</h3>
-              <p className="text-gray-300 text-base md:text-lg">One-on-one coaching with certified trainers to maximize your results</p>
-            </div>
-            <div className="bg-gray-900 p-6 md:p-8 rounded-lg hover:bg-gray-800 transition-colors duration-300 group flex flex-col items-center text-center">
-              <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Heart className="h-12 w-12" />
-              </div>
-              <h3 className="text-2xl font-bold mb-2 md:mb-4">Nutrition Plans</h3>
-              <p className="text-gray-300 text-base md:text-lg">Customized meal plans designed to fuel your fitness journey</p>
-            </div>
-            <div className="bg-gray-900 p-6 md:p-8 rounded-lg hover:bg-gray-800 transition-colors duration-300 group flex flex-col items-center text-center">
-              <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Users className="h-12 w-12" />
-              </div>
-              <h3 className="text-2xl font-bold mb-2 md:mb-4">Group Workouts</h3>
-              <p className="text-gray-300 text-base md:text-lg">High-energy group sessions that build community and motivation</p>
-            </div>
-            <div className="bg-gray-900 p-6 md:p-8 rounded-lg hover:bg-gray-800 transition-colors duration-300 group flex flex-col items-center text-center">
-              <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Dumbbell className="h-12 w-12" />
-              </div>
-              <h3 className="text-2xl font-bold mb-2 md:mb-4">Strength Conditioning</h3>
-              <p className="text-gray-300 text-base md:text-lg">Advanced strength training programs for serious athletes</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       
 
@@ -290,6 +250,48 @@ const LandingPage = () => {
                 <h4 className="font-bold italic text-xl md:text-2xl mb-2 md:mb-4 text-black dark:text-white">Home Training</h4>
                 <p className="text-base md:text-lg text-gray-700 dark:text-gray-200">No gym? No problem! Our home training plans use minimal equipment and are tailored to your schedule. We bring fitness to your living room literally.</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-black uppercase mb-4 tracking-tight">
+              OUR <span className="text-red-600">SERVICES</span>
+            </h2>
+            <p className="text-xl text-gray-300">Comprehensive fitness solutions tailored to your goals</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <div className="bg-gray-900 p-6 md:p-8 rounded-lg hover:bg-gray-800 transition-colors duration-300 group flex flex-col items-center text-center">
+              <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Target className="h-12 w-12" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 md:mb-4">Personal Training</h3>
+              <p className="text-gray-300 text-base md:text-lg">One-on-one coaching with certified trainers to maximize your results</p>
+            </div>
+            <div className="bg-gray-900 p-6 md:p-8 rounded-lg hover:bg-gray-800 transition-colors duration-300 group flex flex-col items-center text-center">
+              <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Heart className="h-12 w-12" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 md:mb-4">Nutrition Plans</h3>
+              <p className="text-gray-300 text-base md:text-lg">Customized meal plans designed to fuel your fitness journey</p>
+            </div>
+            <div className="bg-gray-900 p-6 md:p-8 rounded-lg hover:bg-gray-800 transition-colors duration-300 group flex flex-col items-center text-center">
+              <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Users className="h-12 w-12" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 md:mb-4">Group Workouts</h3>
+              <p className="text-gray-300 text-base md:text-lg">High-energy group sessions that build community and motivation</p>
+            </div>
+            <div className="bg-gray-900 p-6 md:p-8 rounded-lg hover:bg-gray-800 transition-colors duration-300 group flex flex-col items-center text-center">
+              <div className="text-red-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Dumbbell className="h-12 w-12" />
+              </div>
+              <h3 className="text-2xl font-bold mb-2 md:mb-4">Strength Conditioning</h3>
+              <p className="text-gray-300 text-base md:text-lg">Advanced strength training programs for serious athletes</p>
             </div>
           </div>
         </div>
